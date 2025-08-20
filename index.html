@@ -1,0 +1,76 @@
+margin-bottom: 20px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing:b 0.15em;
+    opacity: 0.8;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-box">
+      Je sais qu’on n’est pas ensemble, mais je ne peux pas ignorer ce que je ressens.<br><br>
+      Tu es dans mes pensées plus que je ne l’aurais imaginé.<br><br>
+      Nos conversations me manquent, ton énergie, et cette facilité qu’il y avait entre nous.<br><br>
+      La distance rend les choses plus compliquées, mais pas un jour ne passe sans que je pense à toi.<br><br>
+      Ce n’est peut-être pas officiel... mais ce que je ressens est vrai.<br><br>
+      J’ai hâte au jour où nos chemins se recroiseront.
+    </div>
+  </div>
+</body>
+</html>
+```
+[8/20, 8:47 AM] ChatGPT: ```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Message pour Jessica</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: url('https://i.postimg.cc/ncpjVjc6/Screenshot-20250620-064947.jpg') no-repeat center center/cover;
+    font-family: 'Playfair Display', serif;
+    color: #f0e9e0;
+    overflow: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 0;
+  }
+  .container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    z-index: 1;
+    text-align: center;
+  }
+  .text-box {
+    max-width: 700px;
+    background: rgba(25, 25, 25, 0.7);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+    font-size: 1.4rem;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    animation: fadeIn 3s ease forwards;
+  }
+  .text-box::before {
+    content: "Pour Jessica";
+    display: block;
+    font-size: 2.5rem;
